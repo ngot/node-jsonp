@@ -1,0 +1,44 @@
+{
+  "name": "node-jsonp",
+  "version": "1.0.0",
+  "description": "jsonp client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "jsonp",
+    "node"
+  ],
+  "author": "ngot",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "~2.2.0",
+    "request": "~2.63.0",
+    "superagent": "~1.4.0"
+  },
+  "devDependencies": {
+    "co-mocha": "~1.1.2",
+    "git-pre-hooks": "^1.1.1",
+    "mocha": "~2.3.3",
+    "querystring": "~0.2.0",
+    "should": "~7.1.0",
+    "standard": "5",
+    "supertest": "~1.1.0"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "should",
+      "$"
+    ],
+    "ignore": [
+      "node_modules/**"
+    ]
+  }
+}
