@@ -2,6 +2,8 @@
 
 A simple JSONP implementation for Node.js.
 
+[![Build Status][ci-image]][ci-url]
+
 ## Installation
 
 ``` bash
@@ -37,3 +39,6 @@ The callback is called with `data` parameters.
 ## License
 
 MIT
+
+[ci-image]: https://travis-ci.org/ngot/node-jsonp.png?branch=master
+[ci-url]: https://travis-ci.org/ngot/node-jsonp
