@@ -1,6 +1,6 @@
 {
   "name": "node-jsonp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jsonp client for Node.js",
   "main": "index.js",
   "scripts": {
