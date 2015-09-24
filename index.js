@@ -108,7 +108,7 @@ function JSONP (url, data, method, callback) {
   url = url + method + '=' + generatedFunction
   debug('jsonp url: "%s"', url)
 
-  request(url + method + '=' + generatedFunction, function (err, res, body) {
+  request(url, function (err, res, body) {
     if (err) throw err
     else if (res.statusCode === 200) {
       debug('body: "%j"', body)
