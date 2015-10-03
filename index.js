@@ -108,7 +108,14 @@ function JSONP (url, data, method, callback) {
   url = url + method + '=' + generatedFunction
   debug('jsonp url: "%s"', url)
 
-  request(url, function (err, res, body) {
+  var options = {
+    url: url,
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    }
+  }
+
+  request(options, function (err, res, body) {
     if (err) throw err
     else if (res.statusCode === 200) {
       debug('body: "%j"', body)
